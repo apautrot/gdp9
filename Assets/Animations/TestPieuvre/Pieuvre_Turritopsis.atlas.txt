@@ -1,0 +1,615 @@
+
+Pieuvre_Turritopsis.png
+size: 4096,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PIEUVRE_BLEUE/Bouche0
+  rotate: false
+  xy: 1923, 146
+  size: 25, 30
+  orig: 25, 30
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheCrie
+  rotate: false
+  xy: 1810, 128
+  size: 25, 47
+  orig: 25, 47
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheFiere
+  rotate: false
+  xy: 1173, 32
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheLangue
+  rotate: false
+  xy: 1748, 35
+  size: 41, 34
+  orig: 41, 34
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheMoue
+  rotate: false
+  xy: 1370, 4
+  size: 23, 29
+  orig: 23, 29
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BouchePasContent
+  rotate: false
+  xy: 1173, 2
+  size: 41, 28
+  orig: 41, 28
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheRire
+  rotate: false
+  xy: 1220, 32
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheSouffle
+  rotate: false
+  xy: 1059, 20
+  size: 55, 50
+  orig: 55, 50
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheSourire
+  rotate: true
+  xy: 942, 223
+  size: 31, 19
+  orig: 31, 19
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/BoucheTriste
+  rotate: false
+  xy: 36, 2
+  size: 26, 20
+  orig: 26, 20
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/HubTentacules
+  rotate: false
+  xy: 644, 134
+  size: 147, 120
+  orig: 147, 120
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilColere
+  rotate: true
+  xy: 495, 22
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilDroit
+  rotate: true
+  xy: 3910, 406
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilFerme
+  rotate: true
+  xy: 963, 178
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilFermeJoie
+  rotate: true
+  xy: 1087, 178
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilMalice
+  rotate: true
+  xy: 1211, 178
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilMiClos
+  rotate: true
+  xy: 1335, 177
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilOuvert
+  rotate: true
+  xy: 1459, 177
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/OeilProfil
+  rotate: true
+  xy: 1831, 178
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Tentacules01
+  rotate: true
+  xy: 2, 176
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Tentacules02
+  rotate: true
+  xy: 963, 436
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Tentacules03
+  rotate: true
+  xy: 2, 100
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Tentacules04
+  rotate: true
+  xy: 963, 360
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Tentacules05
+  rotate: true
+  xy: 1456, 436
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Tete
+  rotate: false
+  xy: 2, 252
+  size: 319, 258
+  orig: 319, 258
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Ventouse01
+  rotate: true
+  xy: 1314, 35
+  size: 34, 49
+  orig: 34, 49
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Ventouse02
+  rotate: true
+  xy: 1416, 34
+  size: 35, 46
+  orig: 35, 46
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Ventouse03
+  rotate: true
+  xy: 931, 26
+  size: 44, 62
+  orig: 44, 62
+  offset: 0, 0
+  index: -1
+PIEUVRE_BLEUE/Ventouse04
+  rotate: true
+  xy: 1302, 2
+  size: 27, 39
+  orig: 27, 39
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Bouche0
+  rotate: false
+  xy: 1343, 2
+  size: 25, 30
+  orig: 25, 30
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheCrie
+  rotate: false
+  xy: 1810, 79
+  size: 25, 47
+  orig: 25, 47
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheFiere
+  rotate: false
+  xy: 1267, 32
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheLangue
+  rotate: false
+  xy: 1837, 142
+  size: 41, 34
+  orig: 41, 34
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheMoue
+  rotate: false
+  xy: 1606, 2
+  size: 23, 29
+  orig: 23, 29
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BouchePasContent
+  rotate: false
+  xy: 1216, 2
+  size: 41, 28
+  orig: 41, 28
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheRire
+  rotate: false
+  xy: 1512, 31
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheSouffle
+  rotate: false
+  xy: 4034, 410
+  size: 55, 56
+  orig: 55, 56
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheSourire
+  rotate: true
+  xy: 942, 190
+  size: 31, 19
+  orig: 31, 19
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/BoucheTriste
+  rotate: false
+  xy: 64, 2
+  size: 26, 20
+  orig: 26, 20
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/HubTentacules
+  rotate: false
+  xy: 793, 134
+  size: 147, 120
+  orig: 147, 120
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilColere
+  rotate: true
+  xy: 1955, 182
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilDroit
+  rotate: true
+  xy: 2079, 182
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilFerme
+  rotate: true
+  xy: 2203, 182
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilFermeJoie
+  rotate: true
+  xy: 2327, 182
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilMalice
+  rotate: true
+  xy: 942, 72
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilMiClos
+  rotate: true
+  xy: 1583, 177
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilOuvert
+  rotate: true
+  xy: 1707, 177
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/OeilProfil
+  rotate: true
+  xy: 1066, 72
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Tentacules01
+  rotate: true
+  xy: 2, 24
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Tentacules02
+  rotate: true
+  xy: 963, 284
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Tentacules03
+  rotate: true
+  xy: 1456, 360
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Tentacules04
+  rotate: true
+  xy: 1949, 436
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Tentacules05
+  rotate: true
+  xy: 1456, 284
+  size: 74, 491
+  orig: 74, 491
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Tete
+  rotate: false
+  xy: 323, 252
+  size: 319, 258
+  orig: 319, 258
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Ventouse01
+  rotate: true
+  xy: 1365, 35
+  size: 34, 49
+  orig: 34, 49
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Ventouse02
+  rotate: true
+  xy: 1464, 34
+  size: 35, 46
+  orig: 35, 46
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Ventouse03
+  rotate: true
+  xy: 995, 26
+  size: 44, 62
+  orig: 44, 62
+  offset: 0, 0
+  index: -1
+PIEUVRE_VERTE/Ventouse04
+  rotate: false
+  xy: 1864, 101
+  size: 27, 39
+  orig: 27, 39
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Bouche0
+  rotate: false
+  xy: 1420, 6
+  size: 24, 26
+  orig: 24, 26
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheCrie
+  rotate: false
+  xy: 1837, 93
+  size: 25, 47
+  orig: 25, 47
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheFiere
+  rotate: false
+  xy: 1559, 31
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheLangue
+  rotate: false
+  xy: 1880, 142
+  size: 41, 34
+  orig: 41, 34
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheMoue
+  rotate: false
+  xy: 1395, 2
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BouchePasContent
+  rotate: false
+  xy: 1259, 2
+  size: 41, 28
+  orig: 41, 28
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheRire
+  rotate: false
+  xy: 1606, 33
+  size: 45, 36
+  orig: 45, 36
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheSouffle
+  rotate: false
+  xy: 1116, 20
+  size: 55, 50
+  orig: 55, 50
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheSourire
+  rotate: false
+  xy: 2, 2
+  size: 32, 20
+  orig: 32, 20
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/BoucheTriste
+  rotate: false
+  xy: 1446, 11
+  size: 26, 21
+  orig: 26, 21
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/HubTentacules
+  rotate: false
+  xy: 495, 128
+  size: 147, 122
+  orig: 147, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilColere
+  rotate: true
+  xy: 1190, 72
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilDroit
+  rotate: true
+  xy: 1314, 71
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilFerme
+  rotate: false
+  xy: 619, 6
+  size: 102, 120
+  orig: 102, 120
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilFermeJoie
+  rotate: true
+  xy: 1438, 71
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilMalice
+  rotate: true
+  xy: 1562, 71
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilMiClos
+  rotate: false
+  xy: 723, 12
+  size: 102, 120
+  orig: 102, 120
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilOuvert
+  rotate: false
+  xy: 827, 12
+  size: 102, 120
+  orig: 102, 120
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/OeilProfil
+  rotate: true
+  xy: 1686, 71
+  size: 104, 122
+  orig: 104, 122
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Tentacules01
+  rotate: true
+  xy: 1949, 362
+  size: 72, 488
+  orig: 72, 488
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Tentacules02
+  rotate: true
+  xy: 3422, 438
+  size: 72, 486
+  orig: 72, 486
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Tentacules03
+  rotate: true
+  xy: 2442, 438
+  size: 72, 488
+  orig: 72, 488
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Tentacules04
+  rotate: true
+  xy: 1949, 288
+  size: 72, 488
+  orig: 72, 488
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Tentacules05
+  rotate: true
+  xy: 2932, 438
+  size: 72, 488
+  orig: 72, 488
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Tete
+  rotate: false
+  xy: 644, 256
+  size: 317, 254
+  orig: 317, 254
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Ventouse01
+  rotate: true
+  xy: 1653, 36
+  size: 33, 47
+  orig: 33, 47
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Ventouse02
+  rotate: true
+  xy: 1702, 36
+  size: 33, 44
+  orig: 33, 44
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Ventouse03
+  rotate: true
+  xy: 4034, 468
+  size: 42, 60
+  orig: 42, 60
+  offset: 0, 0
+  index: -1
+PIEUVRE_VIOLETTE/Ventouse04
+  rotate: false
+  xy: 1893, 103
+  size: 25, 37
+  orig: 25, 37
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,146 @@
+
+skeleton.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ArmLeft
+  rotate: false
+  xy: 1014, 647
+  size: 215, 375
+  orig: 215, 375
+  offset: 0, 0
+  index: -1
+ArmeRight
+  rotate: false
+  xy: 794, 644
+  size: 218, 378
+  orig: 218, 378
+  offset: 0, 0
+  index: -1
+Body
+  rotate: true
+  xy: 2, 22
+  size: 408, 456
+  orig: 408, 456
+  offset: 0, 0
+  index: -1
+BowTie
+  rotate: false
+  xy: 1782, 247
+  size: 173, 149
+  orig: 173, 149
+  offset: 0, 0
+  index: -1
+Flower
+  rotate: false
+  xy: 794, 529
+  size: 87, 113
+  orig: 87, 113
+  offset: 0, 0
+  index: -1
+HandLeftClose
+  rotate: true
+  xy: 1434, 2
+  size: 270, 242
+  orig: 270, 242
+  offset: 0, 0
+  index: -1
+HandLeftHoldTrumpet
+  rotate: false
+  xy: 1782, 398
+  size: 227, 314
+  orig: 227, 314
+  offset: 0, 0
+  index: -1
+HandRightClose
+  rotate: true
+  xy: 1208, 23
+  size: 247, 224
+  orig: 247, 224
+  offset: 0, 0
+  index: -1
+Hat
+  rotate: true
+  xy: 1782, 714
+  size: 308, 241
+  orig: 308, 241
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 460, 37
+  size: 307, 478
+  orig: 307, 478
+  offset: 0, 0
+  index: -1
+HeadTail
+  rotate: false
+  xy: 769, 65
+  size: 437, 450
+  orig: 437, 450
+  offset: 0, 0
+  index: -1
+MaskAngry
+  rotate: false
+  xy: 1231, 649
+  size: 190, 373
+  orig: 190, 373
+  offset: 0, 0
+  index: -1
+MaskDodo
+  rotate: false
+  xy: 1423, 653
+  size: 186, 369
+  orig: 186, 369
+  offset: 0, 0
+  index: -1
+MaskHappy
+  rotate: false
+  xy: 1208, 272
+  size: 192, 373
+  orig: 192, 373
+  offset: 0, 0
+  index: -1
+MaskJoy
+  rotate: false
+  xy: 1594, 282
+  size: 186, 369
+  orig: 186, 369
+  offset: 0, 0
+  index: -1
+MaskSad
+  rotate: false
+  xy: 1402, 274
+  size: 190, 373
+  orig: 190, 373
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: false
+  xy: 883, 557
+  size: 147, 85
+  orig: 147, 85
+  offset: 0, 0
+  index: -1
+Sweat
+  rotate: false
+  xy: 430, 517
+  size: 362, 505
+  orig: 362, 505
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: true
+  xy: 2, 432
+  size: 590, 426
+  orig: 590, 426
+  offset: 0, 0
+  index: -1
+Trumpet
+  rotate: false
+  xy: 1611, 702
+  size: 157, 320
+  orig: 157, 320
+  offset: 0, 0
+  index: -1

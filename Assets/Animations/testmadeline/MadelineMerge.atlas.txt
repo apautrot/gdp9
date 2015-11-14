@@ -1,0 +1,125 @@
+
+MadelineMerge.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 61
+  rotate: false
+  xy: 865, 39
+  size: 443, 338
+  orig: 443, 338
+  offset: 0, 0
+  index: -1
+avanbras
+  rotate: false
+  xy: 1576, 380
+  size: 125, 479
+  orig: 125, 479
+  offset: 0, 0
+  index: -1
+bout natte
+  rotate: false
+  xy: 1467, 861
+  size: 250, 279
+  orig: 250, 279
+  offset: 0, 0
+  index: -1
+bras
+  rotate: true
+  xy: 791, 818
+  size: 200, 477
+  orig: 200, 477
+  offset: 0, 0
+  index: -1
+cou
+  rotate: false
+  xy: 1270, 856
+  size: 195, 286
+  orig: 195, 286
+  offset: 0, 0
+  index: -1
+cuisse
+  rotate: false
+  xy: 579, 71
+  size: 284, 742
+  orig: 284, 742
+  offset: 0, 0
+  index: -1
+main derriere
+  rotate: false
+  xy: 1719, 884
+  size: 223, 241
+  orig: 223, 241
+  offset: 0, 0
+  index: -1
+main devant
+  rotate: false
+  xy: 1443, 549
+  size: 131, 305
+  orig: 131, 305
+  offset: 0, 0
+  index: -1
+mollets
+  rotate: false
+  xy: 1817, 1127
+  size: 229, 840
+  orig: 229, 840
+  offset: 0, 0
+  index: -1
+natte
+  rotate: false
+  xy: 1260, 381
+  size: 181, 435
+  orig: 181, 435
+  offset: 0, 0
+  index: -1
+pan 1
+  rotate: false
+  xy: 2, 2
+  size: 575, 811
+  orig: 575, 811
+  offset: 0, 0
+  index: -1
+pan 2
+  rotate: false
+  xy: 791, 1020
+  size: 314, 947
+  orig: 314, 947
+  offset: 0, 0
+  index: -1
+pan 3
+  rotate: false
+  xy: 1498, 1142
+  size: 317, 825
+  orig: 317, 825
+  offset: 0, 0
+  index: -1
+pan devant
+  rotate: false
+  xy: 2, 815
+  size: 787, 1152
+  orig: 787, 1152
+  offset: 0, 0
+  index: -1
+pied
+  rotate: true
+  xy: 1310, 9
+  size: 370, 218
+  orig: 370, 218
+  offset: 0, 0
+  index: -1
+tete
+  rotate: true
+  xy: 865, 379
+  size: 437, 393
+  orig: 437, 393
+  offset: 0, 0
+  index: -1
+torse
+  rotate: false
+  xy: 1107, 1144
+  size: 389, 823
+  orig: 389, 823
+  offset: 0, 0
+  index: -1
