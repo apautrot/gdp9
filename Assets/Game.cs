@@ -51,7 +51,8 @@ public class Game : SceneSingleton<Game>
 
 	}
 
-	
+
+	// public Monster MonsterLeft;
 
 	internal List<InputActionName> inputsEntered = new List<InputActionName>();
 
