@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 	{
 		get
 		{
-			return InputManager.Instance.JoystickDefinition;
+			return InputManager.Instance.Joystick1Definition;
 		}
 	}
 

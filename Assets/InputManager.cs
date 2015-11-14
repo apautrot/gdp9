@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -18,7 +19,6 @@ public enum InputActionName
 public class InputDefinition
 {
 	public InputActionName name;
-	public GameObject buttonPrefab;
 
 	public string joystickButtonName;
 	public string joystickAxixName;
@@ -44,7 +44,8 @@ public class InputDefinition
 			if ( joystickAxixName.Length > 0 )
 			{
 				float value = Input.GetAxis ( joystickAxixName );
-				if ( joystickAxisThreshold < 0 )
+				DebugWindow.Log ( "Input", joystickAxixName, value );
+                if ( joystickAxisThreshold < 0 )
 					return value < joystickAxisThreshold;
 				else
 					return value > joystickAxisThreshold;
@@ -61,11 +62,18 @@ public class InputDefinition
 	}
 }
 
+[System.Serializable]
+public class InputButtonDefinition
+{
+	public InputActionName name;
+	public GameObject buttonPrefab;
+}
+
 public class InputManager : SceneSingleton<InputManager>
 {
-    internal GameObject GetComboButtonPrefab( InputActionName name )
+    internal GameObject GetComboButtonPrefab ( InputActionName name )
     {
-        foreach ( InputDefinition def in JoystickDefinition )
+        foreach ( InputButtonDefinition def in ButtonsPrefabs )
             if ( def.name == name )
                 return def.buttonPrefab;
 
@@ -74,7 +82,12 @@ public class InputManager : SceneSingleton<InputManager>
         return null;
     }
 
-    public InputDefinition[] JoystickDefinition;
+	public InputButtonDefinition[] ButtonsPrefabs;
 
-	
+	// [FormerlySerializedAs("JoystickDefinition")]
+	public InputDefinition[] KeyboardDefinition;
+
+	// [FormerlySerializedAs ( "JoystickDefinitionB" )]
+	public InputDefinition[] Joystick1Definition;
+
 }
