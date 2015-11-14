@@ -5,6 +5,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class Combo
 {
+	public bool isActive = true;
 	public List<InputActionName> actions;
 }
 
@@ -13,6 +14,7 @@ public class ComboList : SceneSingleton<ComboList>
 	public float ScrollingSpeed = 100;
 	public float InterComboSpacing = 50;
 
+	[ComboAttribute]
 	public List<Combo> list;
 
 	internal Combo GetCombo()

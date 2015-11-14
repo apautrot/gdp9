@@ -4,7 +4,7 @@ using UnityEditorInternal;
 using System.Collections;
 using System.Collections.Generic;
 
-class ReorderableListEx : ReorderableList
+public class ReorderableListEx : ReorderableList
 {
 	protected Color selectedColor = Color.Lerp ( Color.white, Color.yellow, 0.20f );
 
