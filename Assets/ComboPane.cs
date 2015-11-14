@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 internal enum ComboPaneResolution
 {
+	Failed,
 	NotCompleted,
 	Completed
 }
@@ -127,6 +128,8 @@ public class ComboPane : MonoBehaviour
 		if ( isCompleted )
 			return ComboPaneResolution.Completed;
 
+		bool isFailed = false;
+
         int activatedCount = 0;
 		for ( int i = 0; i < combo.actions.Count; i++ )
 		{
@@ -134,11 +137,19 @@ public class ComboPane : MonoBehaviour
 				if ( inputs[i] == combo.actions[i] )
 					activatedCount++;
 				else
+				{
+					isFailed = true;
 					break;
+				}
         }
 
 		for ( int i = 0 ; i < buttons.Count; i++ )
 			buttons[i].Activated = ( i < activatedCount );
+
+		if ( isFailed )
+		{
+			return ComboPaneResolution.Failed;
+		}
 
 		isCompleted = ( activatedCount == buttons.Count );
 		if ( isCompleted )

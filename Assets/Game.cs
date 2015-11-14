@@ -84,16 +84,29 @@ public class Game : SceneSingleton<Game>
 			InputManager.Instance.NewInputsQueue.Clear ();
         }
 
-		bool clearInputs = false;
+		bool oneCompleted = false;
+		bool onePartiallyCompleted = false;
+
 		foreach ( ComboPane cp in ActiveComboPanes )
 			if ( !cp.isCompleted )
 			{
 				ComboPaneResolution resolution = cp.UpdateState ( inputsEntered );
-				if ( resolution == ComboPaneResolution.Completed )
-					clearInputs = true;
+				switch ( resolution )
+				{
+					case ComboPaneResolution.Failed:
+						break;
+					case ComboPaneResolution.Completed:
+						oneCompleted = true;
+						break;
+					case ComboPaneResolution.NotCompleted:
+						onePartiallyCompleted = true;
+						break;
+				}
 			}
 
-		if ( clearInputs )
+		if ( oneCompleted )
+			inputsEntered.Clear ();
+		else if ( ! onePartiallyCompleted )
 			inputsEntered.Clear ();
 	}
 }
