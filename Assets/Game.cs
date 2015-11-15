@@ -78,14 +78,14 @@ public class Game : SceneSingleton<Game>
 
 	void Update()
 	{
-		if ( Input.GetKeyDown ( KeyCode.F1 ) )
-			Application.LoadLevel ( "GodzillaWon" );
-
-		if ( Input.GetKeyDown ( KeyCode.F2 ) )
-			Application.LoadLevel ( "PoulpeWon" );
-
-		if ( Input.GetKeyDown ( KeyCode.F3 ) )
-			Application.LoadLevel ( "RobotWon" );
+// 		if ( Input.GetKeyDown ( KeyCode.F1 ) )
+// 			Application.LoadLevel ( "GodzillaWon" );
+// 
+// 		if ( Input.GetKeyDown ( KeyCode.F2 ) )
+// 			Application.LoadLevel ( "PoulpeWon" );
+// 
+// 		if ( Input.GetKeyDown ( KeyCode.F3 ) )
+// 			Application.LoadLevel ( "RobotWon" );
 
 		leftPlayer.UpdateInputs ();
 		rightPlayer.UpdateInputs ();

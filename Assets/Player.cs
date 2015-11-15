@@ -35,12 +35,17 @@ public class Player : MonoBehaviour
 
 	internal SkeletonAnimation spineAnimation;
 
+	static PlayerMonster RandomMonster = (PlayerMonster)RandomInt.Range ( 0, 2 );
+
 	void Awake()
 	{
 		spineAnimation = gameObject.FindChildByComponent<SkeletonAnimation> ();
 		// spineAnimation = GetComponent<SkeletonAnimation> ();
 		if ( spineAnimation == null )
 		{
+			playerMonster = RandomMonster;
+			RandomMonster = ( PlayerMonster ) ( ( (int)RandomMonster + 1 ) % 3 );
+
 			switch ( playerMonster )
 			{
 				case PlayerMonster.Godzilla:
@@ -53,6 +58,9 @@ public class Player : MonoBehaviour
 					spineAnimation = gameObject.InstantiateChild ( Game.Instance.prefabs.Robot ).GetComponent<SkeletonAnimation> ();
 					break;
 			}
+
+			spineAnimation.gameObject.transform.localScale = Vector3.one;
+			spineAnimation.gameObject.transform.localPosition = Vector3.zero;
 		}
     }
 
@@ -304,6 +312,8 @@ public class Player : MonoBehaviour
 		lifeBar.UpdateColor ();
 		if ( lifeBar.Life == 0 )
 		{
+			Go.killAllTweens ();
+
 			switch ( opponent.playerMonster )
 			{
 				case PlayerMonster.Godzilla:

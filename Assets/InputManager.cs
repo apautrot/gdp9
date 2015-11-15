@@ -87,4 +87,18 @@ public class InputManager : SceneSingleton<InputManager>
 	public InputDefinition[] KeyboardDefinition;
 	public InputDefinition[] Joystick1Definition;
 	public InputDefinition[] Joystick2Definition;
+
+	public bool DebugInputs;
+
+	void Update()
+	{
+		if ( DebugInputs )
+		{
+			foreach ( InputDefinition def in Joystick1Definition )
+				def.DebugInWindow ( "Joystick1Definition" );
+
+			foreach ( InputDefinition def in Joystick2Definition )
+				def.DebugInWindow ( "Joystick2Definition" );
+		}
+	}
 }
