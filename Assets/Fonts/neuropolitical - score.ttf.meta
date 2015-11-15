@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 44a021593c0fc6f4d98780a87df5e8e0
+timeCreated: 1440076877
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 2
+  fontSize: 90
+  forceTextureCase: 3
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames: []
+  fallbackFontReferences: []
+  customCharacters: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    ,;:!?./+-*()&%$^_'\"[]\xE9\xE8\xEA\xE7\xE0\xEF\xEE\xF9"
+  fontRenderingMode: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

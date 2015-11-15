@@ -21,11 +21,19 @@ public class Game : SceneSingleton<Game>
 	[System.Serializable]
 	public class Sounds
 	{
-		public AudioClip HitLaunch;
-		public AudioClip HitReceived;
-		public AudioClip ComboDone;
-		public AudioClip[] ComboButtonPush;
-		public AudioClip ComboFailed;
+		public AudioClip GodzillaAnteAttack;
+		public AudioClip PoulpeAnteAttack;
+		public AudioClip RobotAnteAttack;
+
+		public AudioClip GodzillaAttack;
+		public AudioClip PoulpeAttack;
+		public AudioClip RobotAttack;
+
+		public AudioClip GodzillaHit;
+		public AudioClip PoulpeHit;
+		public AudioClip RobotHit;
+
+		public AudioClip StartSound;
 	}
 
 	public Sounds sounds = new Sounds();
@@ -70,6 +78,15 @@ public class Game : SceneSingleton<Game>
 
 	void Update()
 	{
+		if ( Input.GetKeyDown ( KeyCode.F1 ) )
+			Application.LoadLevel ( "GodzillaWon" );
+
+		if ( Input.GetKeyDown ( KeyCode.F2 ) )
+			Application.LoadLevel ( "PoulpeWon" );
+
+		if ( Input.GetKeyDown ( KeyCode.F3 ) )
+			Application.LoadLevel ( "RobotWon" );
+
 		leftPlayer.UpdateInputs ();
 		rightPlayer.UpdateInputs ();
 

@@ -83,6 +83,7 @@ public class Player : MonoBehaviour
 
  	void Update()
  	{
+		/*
 		if ( Input.GetKeyDown ( KeyCode.F1 ) )
 		{
 			spineAnimation.loop = true;
@@ -106,6 +107,7 @@ public class Player : MonoBehaviour
 			spineAnimation.loop = false;
 			spineAnimation.AnimationName = "ANTE_ATTACK";
 		}
+		*/
 	}
 
 	float AnteAttackDuration
@@ -125,8 +127,61 @@ public class Player : MonoBehaviour
 		}
 	}
 
+	AudioClip AnteAttackSound
+	{
+		get
+		{
+			switch ( playerMonster )
+			{
+				case PlayerMonster.Godzilla:
+					return Game.Instance.sounds.GodzillaAnteAttack;
+				case PlayerMonster.Poulpe:
+					return Game.Instance.sounds.PoulpeAnteAttack;
+				default:
+				case PlayerMonster.Robot:
+					return Game.Instance.sounds.RobotAnteAttack;
+			}
+		}
+	}
+
+	AudioClip AttackSound
+	{
+		get
+		{
+			switch ( playerMonster )
+			{
+				case PlayerMonster.Godzilla:
+					return Game.Instance.sounds.GodzillaAttack;
+				case PlayerMonster.Poulpe:
+					return Game.Instance.sounds.PoulpeAttack;
+				default:
+				case PlayerMonster.Robot:
+					return Game.Instance.sounds.RobotAttack;
+			}
+		}
+	}
+
+	AudioClip HitSound
+	{
+		get
+		{
+			switch ( playerMonster )
+			{
+				case PlayerMonster.Godzilla:
+					return Game.Instance.sounds.GodzillaHit;
+				case PlayerMonster.Poulpe:
+					return Game.Instance.sounds.PoulpeHit;
+				default:
+				case PlayerMonster.Robot:
+					return Game.Instance.sounds.RobotHit;
+			}
+		}
+	}
+
 	internal void PrepareAttack ( int attackPower )
 	{
+		Audio.Instance.PlaySound ( AnteAttackSound );
+
 		spineAnimation.loop = false;
 		spineAnimation.AnimationName = "ANTE_ATTACK";
 		spineAnimation.state.Complete += AnteAttackAnimationComplete;
@@ -152,6 +207,8 @@ public class Player : MonoBehaviour
 
 	private void AttackOpponent( int attackPower )
 	{
+		Audio.Instance.PlaySound ( AttackSound );
+
 		SkeletonAnimation fx = GameObject.Instantiate ( Game.Instance.prefabs.HitFx ).GetComponent<SkeletonAnimation>();
 		switch ( playerMonster )
 		{
@@ -211,6 +268,8 @@ public class Player : MonoBehaviour
 
 	internal void OnHit ( int attackPower, PlayerMonster fromMonster )
 	{
+		Audio.Instance.PlaySound ( HitSound );
+
 		SkeletonAnimation fx = GameObject.Instantiate ( Game.Instance.prefabs.HitFx ).GetComponent<SkeletonAnimation>();
 		switch ( fromMonster )
 		{
@@ -243,6 +302,21 @@ public class Player : MonoBehaviour
 
 		lifeBar.Life = Mathf.Max ( lifeBar.Life - ( attackPower * 0.05f ), 0 );
 		lifeBar.UpdateColor ();
+		if ( lifeBar.Life == 0 )
+		{
+			switch ( opponent.playerMonster )
+			{
+				case PlayerMonster.Godzilla:
+					Application.LoadLevel ( "GodzillaWon" );
+					break;
+				case PlayerMonster.Poulpe:
+					Application.LoadLevel ( "PoulpeWon" );
+					break;
+				case PlayerMonster.Robot:
+					Application.LoadLevel ( "RobotWon" );
+					break;
+			}
+		}
 
 		spineAnimation.state.Complete += HitAnimationComplete;
 		spineAnimation.loop = false;
