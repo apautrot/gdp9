@@ -19,6 +19,11 @@ public class NinePatch : MonoBehaviour
 		Recreate ();
 	}
 
+	void OnValidate()
+	{
+		Recreate ();
+	}
+
 	public void Recreate ()
 	{
 		MeshFilter filter = gameObject.GetOrCreateComponent<MeshFilter> ();

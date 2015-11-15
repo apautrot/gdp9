@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LifeBar : MonoBehaviour
 {
-	[RangeAttribute(0,1)]
+	[RangeAttribute ( 0, 1 )]
 	public float Life;
 
 	public Color FullLife;
@@ -29,7 +29,7 @@ public class LifeBar : MonoBehaviour
 		UpdateColor ();
     }
 
-	void UpdateColor()
+	internal void UpdateColor()
 	{
         ColorHSL hslColor = new ColorHSL();
 		hslColor.h = Mathf.Lerp ( hslNoLife.h, hslFullLife.h, Life );

@@ -9,8 +9,16 @@ internal enum ComboPaneResolution
 	Completed
 }
 
+enum ComboPaneState
+{
+	Scrolling,
+	Absorbed																											
+}
+
 public class ComboPane : MonoBehaviour
 {
+	ComboPaneState state;
+
 	internal bool isCompleted;
 	private Combo combo;
 	private List<ComboButton> buttons = new List<ComboButton>();
@@ -18,14 +26,20 @@ public class ComboPane : MonoBehaviour
 
 	public float Speed;
 
-	private ComboPane paneAtRight;
-
-	GameObject p1;
-	GameObject p2;
 	NinePatch back;
+
+	internal int Size
+	{
+		get
+		{
+			return combo.actions.Count;
+		}
+	}
 
 	void Awake()
 	{
+		back = gameObject.FindChildByName ( "back" ).GetComponent<NinePatch> ();
+
 		BoxCollider2D = GetComponent<BoxCollider2D> ();
 		if ( BoxCollider2D == null )
 			Debug.LogError ( "There is no BoxCollider2D component on Game singleton" );
@@ -35,14 +49,12 @@ public class ComboPane : MonoBehaviour
 		Create ();
 
 		Game.Instance.RegisterComboPane ( this );
-
-		AlignLeftOn ( 640 );
     }
 
-	void AlignLeftOn( float x )
+	internal void AlignLeftOn ( float x, float y )
 	{
 		// Debug.Log ( "Align on " + x );
-		transform.position = transform.position.WithXReplacedBy ( x + ( BoxCollider2D.size.x / 2 ) );
+		transform.localPosition = transform.localPosition.WithXYReplacedBy ( x + ( BoxCollider2D.size.x / 2 ), y );
 	}
 
 // 	void Start()
@@ -61,14 +73,13 @@ public class ComboPane : MonoBehaviour
 
 	void Create()
 	{
-		gameObject.DestroyAllChilds ();
+		// gameObject.DestroyAllChilds ();
 
+		float spacing = 150;
 		int count = combo.actions.Count;
 		if ( count > 0 )
 		{
 			// float buttonWidth = Game.Instance.Settings.ComboButtonWidth
-			float spacing = 150;
-
 			float x = - ( ( ( count - 1 ) * spacing ) / 2 );
 
 			foreach ( InputActionName name in combo.actions )
@@ -87,57 +98,47 @@ public class ComboPane : MonoBehaviour
 			}
 		}
 
-		Vector2 size = gameObject.GetBounds ().size;
-		size.x *= 1 / transform.lossyScale.x;
-		size.y *= 1 / transform.lossyScale.y;
+		float width = ( ( ( count - 1 ) * spacing ) );
+		Vector2 size = new Vector2 ( width + 128 + 32, 128 + 32 );
+
+		// Debug.Log ( "Size:" + size );
+
 		BoxCollider2D.size = size;
-	}
+
+		back.Width = size.x;
+		back.Height = size.y;
+		back.Recreate ();
+    }
 
 	void Update()
 	{
-		// DebugWindow.Log ( name, "lossyScale", transform.lossyScale.ToStringEx() );
-
-		transform.localPosition -= new Vector3 ( ComboList.Instance.ScrollingSpeed * Time.deltaTime, 0, 0 );
-
+		if ( state == ComboPaneState.Scrolling )
 		{
-			bool isInGameArea = BoxCollider2D.IsTouching ( Game.Instance.BoxCollider2D );
-			// DebugWindow.Log ( name, "isInGameArea", isInGameArea );
+			transform.localPosition -= new Vector3 ( ComboList.Instance.ScrollingSpeed * Time.deltaTime, 0, 0 );
 
-			if ( !isInGameArea && transform.localPosition.x < 0 )
-				gameObject.DestroySelf ();
-		}
-
-		if ( paneAtRight == null )
-		{
-			Vector2 rightCenter = new Vector2 ( BoxCollider2D.bounds.max.x, BoxCollider2D.bounds.center.y );
-			bool isInGameArea = Game.Instance.Rectangle.Contains ( rightCenter );
-			// DebugWindow.Log ( name, "is rightCenter InGameArea", isInGameArea );
-			if ( isInGameArea )
 			{
-				GameObject prefab = Game.Instance.prefabs.ComboPane;
-				if ( prefab == null )
-					Debug.LogError ( "Missing Game.prefabs.ComboPane prefab" );
+				bool isInGameArea = BoxCollider2D.IsTouching ( Game.Instance.BoxCollider2D );
+				// DebugWindow.Log ( name, "isInGameArea", isInGameArea );
 
-				GameObject paneAtRightGO = transform.parent.gameObject.InstantiateChild ( prefab );
-				paneAtRightGO.transform.localScale = Vector3.one;
-				paneAtRight = paneAtRightGO.GetComponent<ComboPane> ();
-				if ( paneAtRight == null )
-					Debug.LogError ( "Missing ComboPane component on Game.prefabs.ComboPane prefab" );
+				if ( !isInGameArea && transform.localPosition.x < 0 )
+					gameObject.DestroySelf ();
+			}
 
-				paneAtRightGO.transform.localPosition = transform.localPosition;
-				paneAtRight.AlignLeftOn ( rightCenter.x + ComboList.Instance.InterComboSpacing );
-            }
-		}
+			// CreateRightPaneIfNeeded ();
+        }
     }
 
-	internal ComboPaneResolution UpdateState ( PlayerNumber playerNumber, List<InputActionName> inputs )
+	internal int activatedCountPlayerLeft = 0;
+	internal int activatedCountPlayerRight = 0;
+
+	internal ComboPaneResolution TryResolvingState ( Player player, List<InputActionName> inputs )
 	{
 		if ( isCompleted )
 			return ComboPaneResolution.Completed;
 
 		bool isFailed = false;
 
-        int activatedCount = 0;
+		int activatedCount = 0;
 		for ( int i = 0; i < combo.actions.Count; i++ )
 		{
 			if ( i < inputs.Count )
@@ -150,8 +151,11 @@ public class ComboPane : MonoBehaviour
 				}
         }
 
-		for ( int i = 0 ; i < buttons.Count; i++ )
-			buttons[i].Activated = ( i < activatedCount );
+		if ( player.playerSide == PlayerSide.Left )
+			activatedCountPlayerLeft = activatedCount;
+
+		if ( player.playerSide == PlayerSide.Right )
+			activatedCountPlayerRight = activatedCount;
 
 		if ( isFailed )
 		{
@@ -161,13 +165,35 @@ public class ComboPane : MonoBehaviour
 		isCompleted = ( activatedCount == buttons.Count );
 		if ( isCompleted )
 		{
-			transform.localScale = new Vector3 ( 0.5f, 0.5f, 0.5f );
+			state = ComboPaneState.Absorbed;
+
+			player.PrepareAttack ( Size );
+
+			GoTweenChain chain = new GoTweenChain();
+			chain.append ( transform.scaleTo ( 0.125f, 1.5f ).eases ( GoEaseType.Linear ) );
+			chain.append ( transform.scaleTo ( 0.125f, 1.0f ).eases ( GoEaseType.Linear ) );
+
+			chain.insert ( 0.25f, transform.scaleTo ( 1.25f, 0.25f ).eases ( GoEaseType.QuadInOut ) );
+			chain.insert ( 0.25f, transform.positionTo ( 1.25f,
+				player.ComboCollectPosition
+				).eases ( GoEaseType.QuadInOut ) );
+			chain.setOnCompleteHandler ( c => {
+				gameObject.DestroySelf ();
+                } );
+			chain.Start ();
+
 			return ComboPaneResolution.Completed;
 		}
 		else
 		{
-			transform.localScale = Vector3.one;
 			return ComboPaneResolution.NotCompleted;
 		}
+	}
+
+	internal void UpdateGraphicalState()
+	{
+		int maxActivatedCount = Mathf.Max ( activatedCountPlayerLeft, activatedCountPlayerRight );
+        for ( int i = 0; i < buttons.Count; i++ )
+			buttons[i].Activated = ( i < maxActivatedCount );
 	}
 }

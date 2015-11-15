@@ -8,11 +8,29 @@ public class Game : SceneSingleton<Game>
 	public class Prefabs
 	{
 		public GameObject ComboPane;
+		public GameObject Godzilla;
+		public GameObject Robot;
+		public GameObject Poulpe;
+		public GameObject HitFx;
 	}
 
 	public Prefabs prefabs;
 
-	
+
+
+	[System.Serializable]
+	public class Sounds
+	{
+		public AudioClip HitLaunch;
+		public AudioClip HitReceived;
+		public AudioClip ComboDone;
+		public AudioClip[] ComboButtonPush;
+		public AudioClip ComboFailed;
+	}
+
+	public Sounds sounds = new Sounds();
+
+
 
 	internal BoxCollider2D BoxCollider2D;
 
@@ -43,14 +61,21 @@ public class Game : SceneSingleton<Game>
 		ActiveComboPanes.Remove ( comboPane );
 	}
 
-
-
-
 	void Start()
 	{
-
 	}
 
+	public Player leftPlayer;
+	public Player rightPlayer;
+
+	void Update()
+	{
+		leftPlayer.UpdateInputs ();
+		rightPlayer.UpdateInputs ();
+
+		foreach ( ComboPane cp in ActiveComboPanes )
+			cp.UpdateGraphicalState ();
+    }
 
 	// public Monster MonsterLeft;
 	
