@@ -1,0 +1,601 @@
+
+AllFx.png
+size: 4096,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FXAttackPoulpe0001
+  rotate: false
+  xy: 2, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0002
+  rotate: false
+  xy: 2, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0003
+  rotate: false
+  xy: 2, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0004
+  rotate: false
+  xy: 2, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0005
+  rotate: false
+  xy: 366, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0006
+  rotate: false
+  xy: 366, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0007
+  rotate: false
+  xy: 366, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0008
+  rotate: false
+  xy: 2, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0010
+  rotate: false
+  xy: 2, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0009
+  rotate: false
+  xy: 2, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0011
+  rotate: false
+  xy: 366, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0012
+  rotate: false
+  xy: 366, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FXAttackPoulpe0013
+  rotate: false
+  xy: 366, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0001
+  rotate: false
+  xy: 730, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0002
+  rotate: false
+  xy: 2, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0003
+  rotate: false
+  xy: 366, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0004
+  rotate: false
+  xy: 730, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0005
+  rotate: false
+  xy: 1094, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0006
+  rotate: false
+  xy: 2, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0007
+  rotate: false
+  xy: 366, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0008
+  rotate: false
+  xy: 730, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0009
+  rotate: false
+  xy: 1094, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0010
+  rotate: false
+  xy: 1458, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0011
+  rotate: false
+  xy: 366, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0013
+  rotate: false
+  xy: 366, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FX_ImpactAttackGodzilla0012
+  rotate: false
+  xy: 366, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0001
+  rotate: false
+  xy: 730, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0002
+  rotate: false
+  xy: 1094, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0003
+  rotate: false
+  xy: 1458, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0004
+  rotate: false
+  xy: 1822, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0005
+  rotate: false
+  xy: 1822, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0006
+  rotate: false
+  xy: 730, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0007
+  rotate: false
+  xy: 1094, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0008
+  rotate: false
+  xy: 1458, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0009
+  rotate: false
+  xy: 1822, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0010
+  rotate: false
+  xy: 2186, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0011
+  rotate: false
+  xy: 1094, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0012
+  rotate: false
+  xy: 1458, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0013
+  rotate: false
+  xy: 1822, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0014
+  rotate: false
+  xy: 2186, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0015
+  rotate: false
+  xy: 2550, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0016
+  rotate: false
+  xy: 1458, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0017
+  rotate: false
+  xy: 1822, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackGodzilla0018
+  rotate: false
+  xy: 2186, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0001
+  rotate: false
+  xy: 2550, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0002
+  rotate: false
+  xy: 2550, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0003
+  rotate: false
+  xy: 2914, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0004
+  rotate: false
+  xy: 2914, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0005
+  rotate: false
+  xy: 1822, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0006
+  rotate: false
+  xy: 1822, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0007
+  rotate: false
+  xy: 2186, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0008
+  rotate: false
+  xy: 2186, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0009
+  rotate: false
+  xy: 2550, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0010
+  rotate: false
+  xy: 2550, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0011
+  rotate: false
+  xy: 2550, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0012
+  rotate: false
+  xy: 2914, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxAttackRobot0013
+  rotate: false
+  xy: 2914, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0001
+  rotate: false
+  xy: 3278, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0002
+  rotate: false
+  xy: 3278, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0003
+  rotate: false
+  xy: 2186, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0004
+  rotate: false
+  xy: 2186, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0005
+  rotate: false
+  xy: 2550, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0006
+  rotate: false
+  xy: 2550, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0007
+  rotate: false
+  xy: 2914, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0008
+  rotate: false
+  xy: 2914, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0009
+  rotate: false
+  xy: 3278, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0010
+  rotate: false
+  xy: 3278, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0011
+  rotate: false
+  xy: 3642, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0012
+  rotate: false
+  xy: 3642, 1626
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0013
+  rotate: false
+  xy: 2550, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackPoulpe0014
+  rotate: false
+  xy: 2550, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0001
+  rotate: false
+  xy: 2914, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0002
+  rotate: false
+  xy: 2914, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0003
+  rotate: false
+  xy: 3278, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0004
+  rotate: false
+  xy: 3278, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0005
+  rotate: false
+  xy: 3642, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0006
+  rotate: false
+  xy: 3642, 1220
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0007
+  rotate: false
+  xy: 2914, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0008
+  rotate: false
+  xy: 2914, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0009
+  rotate: false
+  xy: 3278, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0010
+  rotate: false
+  xy: 3278, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0011
+  rotate: false
+  xy: 3642, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0012
+  rotate: false
+  xy: 3642, 814
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0013
+  rotate: false
+  xy: 3278, 2
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
+FxImpactAttackRobot0014
+  rotate: false
+  xy: 3642, 408
+  size: 362, 404
+  orig: 362, 404
+  offset: 0, 0
+  index: -1
