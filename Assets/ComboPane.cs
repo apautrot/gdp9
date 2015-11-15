@@ -91,6 +91,8 @@ public class ComboPane : MonoBehaviour
 
 	void Update()
 	{
+		DebugWindow.Log ( name, "lossyScale", transform.lossyScale.ToStringEx() );
+
 		transform.localPosition -= new Vector3 ( ComboList.Instance.ScrollingSpeed * Time.deltaTime, 0, 0 );
 
 		{
@@ -113,6 +115,7 @@ public class ComboPane : MonoBehaviour
 					Debug.LogError ( "Missing Game.prefabs.ComboPane prefab" );
 
 				GameObject paneAtRightGO = transform.parent.gameObject.InstantiateChild ( prefab );
+				paneAtRightGO.transform.localScale = Vector3.one;
 				paneAtRight = paneAtRightGO.GetComponent<ComboPane> ();
 				if ( paneAtRight == null )
 					Debug.LogError ( "Missing ComboPane component on Game.prefabs.ComboPane prefab" );

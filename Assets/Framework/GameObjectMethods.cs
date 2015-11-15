@@ -59,6 +59,20 @@ public static class GameObjects
 
 public static class GameObjectExtensions
 {
+	public static Vector3 GetWorldScale ( this Transform transform )
+	{
+		Vector3 worldScale = transform.localScale;
+		Transform parent = transform.parent;
+
+		while ( parent != null )
+		{
+			worldScale = Vector3.Scale ( worldScale, parent.localScale );
+			parent = parent.parent;
+		}
+
+		return worldScale;
+	}
+
 	public static void MoveChildTo ( this GameObject self, GameObject to )
 	{
 		List<Transform> childs = new List<Transform> ();
