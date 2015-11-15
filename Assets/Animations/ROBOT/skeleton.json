@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "igBh+zn/SsNwfRKvCjaqBthIwI8", "spine": "2.1.27", "width": 399.51, "height": 513.41, "images": "" },
+"skeleton": { "hash": "OgDn9EfUPFRf9OAHdO/ncagov+Q", "spine": "2.1.27", "width": 399.51, "height": 513.41, "images": "" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "Corps", "parent": "root", "length": 330.74, "x": 0.14, "y": 137.43, "rotation": 92.25 },
@@ -201,6 +201,11 @@
 			"robot_trappe": { "x": 1.06, "y": 2.01, "rotation": -92.25, "width": 58, "height": 80 }
 		}
 	}
+},
+"events": {
+	"Robot_AnteAttack_Sound": {},
+	"Robot_Attack_Sound": {},
+	"Robot_Hit_Sound": {}
 },
 "animations": {
 	"ANTE_ATTACK": {
@@ -451,17 +456,15 @@
 				"rotate": [
 					{ "time": 0, "angle": 0 },
 					{ "time": 0.3666, "angle": 47.37 },
-					{ "time": 0.7666, "angle": 35.37 }
+					{ "time": 0.5333, "angle": 4.02 }
 				],
 				"translate": [
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
-					{ "time": 0.3666, "x": 0, "y": 0, "curve": "stepped" },
-					{ "time": 0.7666, "x": 0, "y": 0 }
+					{ "time": 0.3666, "x": 0, "y": 0 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
-					{ "time": 0.3666, "x": 1, "y": 1, "curve": "stepped" },
-					{ "time": 0.7666, "x": 1, "y": 1 }
+					{ "time": 0.3666, "x": 1, "y": 1 }
 				]
 			},
 			"Chemine02": {
@@ -552,20 +555,17 @@
 				"rotate": [
 					{ "time": 0, "angle": 0 },
 					{ "time": 0.3, "angle": -71.72 },
-					{ "time": 0.5333, "angle": -97.57, "curve": "stepped" },
-					{ "time": 0.7666, "angle": -97.57 }
+					{ "time": 0.5333, "angle": -54.48 }
 				],
 				"translate": [
 					{ "time": 0, "x": 0, "y": 0 },
 					{ "time": 0.3, "x": 2.24, "y": 12.78, "curve": "stepped" },
-					{ "time": 0.5333, "x": 2.24, "y": 12.78, "curve": "stepped" },
-					{ "time": 0.7666, "x": 2.24, "y": 12.78 }
+					{ "time": 0.5333, "x": 2.24, "y": 12.78 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
 					{ "time": 0.3, "x": 1, "y": 1, "curve": "stepped" },
-					{ "time": 0.5333, "x": 1, "y": 1, "curve": "stepped" },
-					{ "time": 0.7666, "x": 1, "y": 1 }
+					{ "time": 0.5333, "x": 1, "y": 1 }
 				]
 			},
 			"Main02": {
@@ -800,12 +800,15 @@
 						{ "time": 0.5333 },
 						{
 							"time": 0.7666,
-							"vertices": [ -0.91128, 5.13034, 9.84131, -18.44046, -12.88782, -28.80926, -23.64043, -5.23855 ]
+							"vertices": [ -1.33465, 6.27978, 11.43022, -18.72045, -12.67733, -31.02942, -25.44217, -6.02914 ]
 						}
 					]
 				}
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.6, "name": "Robot_AnteAttack_Sound" }
+		]
 	},
 	"ATTACK": {
 		"bones": {
@@ -2026,7 +2029,10 @@
 					]
 				}
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.3, "name": "Robot_Attack_Sound" }
+		]
 	},
 	"HIT": {
 		"bones": {
@@ -2710,7 +2716,10 @@
 					]
 				}
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.0333, "name": "Robot_Hit_Sound" }
+		]
 	},
 	"IDLE": {
 		"bones": {
