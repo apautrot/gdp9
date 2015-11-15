@@ -1,0 +1,264 @@
+{
+"skeleton": { "hash": "HcajufXygpQcDm8w0xmhsu6Zvm4", "spine": "2.1.27", "width": 0, "height": 0, "images": "" },
+"bones": [
+	{ "name": "root", "x": 1, "y": 1 },
+	{ "name": "FX_ImpactAttackGodzilla", "parent": "root" },
+	{ "name": "FxAttackGodzilla", "parent": "root" },
+	{ "name": "FxAttackImpactPoulpe", "parent": "root" },
+	{ "name": "FxAttackPoulpe", "parent": "root" },
+	{ "name": "FxAttackRobot", "parent": "root" },
+	{ "name": "FxImpactAttackRobot", "parent": "root" }
+],
+"slots": [
+	{ "name": "FXAttackPoulpe0001", "bone": "FxAttackPoulpe" },
+	{ "name": "FX_ImpactAttackGodzilla0001", "bone": "FX_ImpactAttackGodzilla" },
+	{ "name": "FxAttackGodzilla0001", "bone": "FxAttackGodzilla" },
+	{ "name": "FxAttackRobot0001", "bone": "FxAttackRobot" },
+	{ "name": "FxImpactAttackPoulpe0001", "bone": "FxAttackImpactPoulpe" },
+	{ "name": "FxImpactAttackRobot0001", "bone": "FxImpactAttackRobot" }
+],
+"skins": {
+	"default": {
+		"FXAttackPoulpe0001": {
+			"FXAttackPoulpe0001": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0002": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0003": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0004": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0005": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0006": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0007": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0008": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0009": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0010": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0011": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0012": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 },
+			"FXAttackPoulpe0013": { "x": 4.92, "y": -37.78, "width": 362, "height": 404 }
+		},
+		"FX_ImpactAttackGodzilla0001": {
+			"FX_ImpactAttackGodzilla0001": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0002": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0003": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0004": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0005": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0006": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0007": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0008": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0009": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0010": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0011": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0012": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 },
+			"FX_ImpactAttackGodzilla0013": { "x": -29.98, "y": -44.54, "width": 362, "height": 404 }
+		},
+		"FxAttackGodzilla0001": {
+			"FxAttackGodzilla0001": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0002": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0003": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0004": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0005": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0006": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0007": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0008": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0009": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0010": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0011": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0012": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0013": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0014": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0015": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0016": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0017": { "width": 362, "height": 404 },
+			"FxAttackGodzilla0018": { "width": 362, "height": 404 }
+		},
+		"FxAttackRobot0001": {
+			"FxAttackRobot0001": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0002": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0003": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0004": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0005": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0006": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0007": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0008": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0009": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0010": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0011": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0012": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 },
+			"FxAttackRobot0013": { "x": -19.14, "y": 41.66, "width": 362, "height": 404 }
+		},
+		"FxImpactAttackPoulpe0001": {
+			"FxImpactAttackPoulpe0001": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0002": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0003": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0004": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0005": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0006": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0007": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0008": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0009": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0010": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0011": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0012": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0013": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 },
+			"FxImpactAttackPoulpe0014": { "x": -19.14, "y": -14.63, "width": 362, "height": 404 }
+		},
+		"FxImpactAttackRobot0001": {
+			"FxImpactAttackRobot0001": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0002": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0003": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0004": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0005": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0006": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0007": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0008": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0009": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0010": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0011": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0012": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0013": { "x": -56.3, "y": -9, "width": 362, "height": 404 },
+			"FxImpactAttackRobot0014": { "x": -56.3, "y": -9, "width": 362, "height": 404 }
+		}
+	}
+},
+"animations": {
+	"FX_Attack_Godzilla": {
+		"slots": {
+			"FXAttackPoulpe0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"FxAttackGodzilla0001": {
+				"attachment": [
+					{ "time": 0, "name": "FxAttackGodzilla0001" },
+					{ "time": 0.0333, "name": "FxAttackGodzilla0002" },
+					{ "time": 0.0666, "name": "FxAttackGodzilla0003" },
+					{ "time": 0.1, "name": "FxAttackGodzilla0004" },
+					{ "time": 0.1333, "name": "FxAttackGodzilla0005" },
+					{ "time": 0.1666, "name": "FxAttackGodzilla0006" },
+					{ "time": 0.2, "name": "FxAttackGodzilla0007" },
+					{ "time": 0.2333, "name": "FxAttackGodzilla0008" },
+					{ "time": 0.2666, "name": "FxAttackGodzilla0009" },
+					{ "time": 0.3, "name": "FxAttackGodzilla0010" },
+					{ "time": 0.3333, "name": "FxAttackGodzilla0011" },
+					{ "time": 0.3666, "name": "FxAttackGodzilla0012" },
+					{ "time": 0.4, "name": "FxAttackGodzilla0013" },
+					{ "time": 0.4333, "name": "FxAttackGodzilla0014" },
+					{ "time": 0.4666, "name": "FxAttackGodzilla0015" },
+					{ "time": 0.5, "name": "FxAttackGodzilla0016" },
+					{ "time": 0.5333, "name": "FxAttackGodzilla0017" },
+					{ "time": 0.5666, "name": "FxAttackGodzilla0018" }
+				]
+			}
+		}
+	},
+	"FX_Attack_Poulpe": {
+		"slots": {
+			"FXAttackPoulpe0001": {
+				"attachment": [
+					{ "time": 0, "name": "FXAttackPoulpe0001" },
+					{ "time": 0.0333, "name": "FXAttackPoulpe0002" },
+					{ "time": 0.0666, "name": "FXAttackPoulpe0003" },
+					{ "time": 0.1, "name": "FXAttackPoulpe0004" },
+					{ "time": 0.1333, "name": "FXAttackPoulpe0005" },
+					{ "time": 0.1666, "name": "FXAttackPoulpe0006" },
+					{ "time": 0.2, "name": "FXAttackPoulpe0007" },
+					{ "time": 0.2333, "name": "FXAttackPoulpe0008" },
+					{ "time": 0.2666, "name": "FXAttackPoulpe0009" },
+					{ "time": 0.3, "name": "FXAttackPoulpe0010" },
+					{ "time": 0.3333, "name": "FXAttackPoulpe0011" },
+					{ "time": 0.3666, "name": "FXAttackPoulpe0012" },
+					{ "time": 0.4, "name": "FXAttackPoulpe0013" }
+				]
+			}
+		}
+	},
+	"FX_Attack_Robot": {
+		"slots": {
+			"FxAttackRobot0001": {
+				"attachment": [
+					{ "time": 0, "name": "FxAttackRobot0001" },
+					{ "time": 0.0333, "name": "FxAttackRobot0002" },
+					{ "time": 0.0666, "name": "FxAttackRobot0003" },
+					{ "time": 0.1, "name": "FxAttackRobot0004" },
+					{ "time": 0.1333, "name": "FxAttackRobot0005" },
+					{ "time": 0.1666, "name": "FxAttackRobot0006" },
+					{ "time": 0.2, "name": "FxAttackRobot0007" },
+					{ "time": 0.2333, "name": "FxAttackRobot0008" },
+					{ "time": 0.2666, "name": "FxAttackRobot0009" },
+					{ "time": 0.3, "name": "FxAttackRobot0010" },
+					{ "time": 0.3333, "name": "FxAttackRobot0011" },
+					{ "time": 0.3666, "name": "FxAttackRobot0012" },
+					{ "time": 0.4, "name": "FxAttackRobot0013" }
+				]
+			}
+		}
+	},
+	"FX_ImpactAttack_Godzilla": {
+		"slots": {
+			"FX_ImpactAttackGodzilla0001": {
+				"attachment": [
+					{ "time": 0, "name": "FX_ImpactAttackGodzilla0001" },
+					{ "time": 0.0333, "name": "FX_ImpactAttackGodzilla0002" },
+					{ "time": 0.0666, "name": "FX_ImpactAttackGodzilla0003" },
+					{ "time": 0.1, "name": "FX_ImpactAttackGodzilla0004" },
+					{ "time": 0.1333, "name": "FX_ImpactAttackGodzilla0005" },
+					{ "time": 0.1666, "name": "FX_ImpactAttackGodzilla0006" },
+					{ "time": 0.2, "name": "FX_ImpactAttackGodzilla0007" },
+					{ "time": 0.2333, "name": "FX_ImpactAttackGodzilla0008" },
+					{ "time": 0.2666, "name": "FX_ImpactAttackGodzilla0009" },
+					{ "time": 0.3, "name": "FX_ImpactAttackGodzilla0010" },
+					{ "time": 0.3333, "name": "FX_ImpactAttackGodzilla0011" },
+					{ "time": 0.3666, "name": "FX_ImpactAttackGodzilla0012" },
+					{ "time": 0.4, "name": "FX_ImpactAttackGodzilla0013" },
+					{ "time": 0.4333, "name": null }
+				]
+			}
+		}
+	},
+	"FX_ImpactAttack_Poulpe": {
+		"slots": {
+			"FxImpactAttackPoulpe0001": {
+				"attachment": [
+					{ "time": 0, "name": "FxImpactAttackPoulpe0001" },
+					{ "time": 0.0333, "name": "FxImpactAttackPoulpe0002" },
+					{ "time": 0.0666, "name": "FxImpactAttackPoulpe0003" },
+					{ "time": 0.1, "name": "FxImpactAttackPoulpe0004" },
+					{ "time": 0.1333, "name": "FxImpactAttackPoulpe0005" },
+					{ "time": 0.1666, "name": "FxImpactAttackPoulpe0006" },
+					{ "time": 0.2, "name": "FxImpactAttackPoulpe0007" },
+					{ "time": 0.2333, "name": "FxImpactAttackPoulpe0008" },
+					{ "time": 0.2666, "name": "FxImpactAttackPoulpe0009" },
+					{ "time": 0.3, "name": "FxImpactAttackPoulpe0010" },
+					{ "time": 0.3333, "name": "FxImpactAttackPoulpe0011" },
+					{ "time": 0.3666, "name": "FxImpactAttackPoulpe0012" },
+					{ "time": 0.4, "name": "FxImpactAttackPoulpe0013" },
+					{ "time": 0.4333, "name": "FxImpactAttackPoulpe0014" },
+					{ "time": 0.4666, "name": null }
+				]
+			}
+		}
+	},
+	"FX_ImpactAttack_Robot": {
+		"slots": {
+			"FxImpactAttackRobot0001": {
+				"attachment": [
+					{ "time": 0, "name": "FxImpactAttackRobot0001" },
+					{ "time": 0.0333, "name": "FxImpactAttackRobot0002" },
+					{ "time": 0.0666, "name": "FxImpactAttackRobot0003" },
+					{ "time": 0.1, "name": "FxImpactAttackRobot0004" },
+					{ "time": 0.1333, "name": "FxImpactAttackRobot0005" },
+					{ "time": 0.1666, "name": "FxImpactAttackRobot0006" },
+					{ "time": 0.2, "name": "FxImpactAttackRobot0007" },
+					{ "time": 0.2333, "name": "FxImpactAttackRobot0008" },
+					{ "time": 0.2666, "name": "FxImpactAttackRobot0009" },
+					{ "time": 0.3, "name": "FxImpactAttackRobot0010" },
+					{ "time": 0.3333, "name": "FxImpactAttackRobot0011" },
+					{ "time": 0.3666, "name": "FxImpactAttackRobot0012" },
+					{ "time": 0.4, "name": "FxImpactAttackRobot0013" },
+					{ "time": 0.4333, "name": "FxImpactAttackRobot0014" },
+					{ "time": 0.4666, "name": null }
+				]
+			}
+		}
+	}
+}
+}
