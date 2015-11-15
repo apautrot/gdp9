@@ -8,6 +8,9 @@ public class Game : SceneSingleton<Game>
 	public class Prefabs
 	{
 		public GameObject ComboPane;
+		public GameObject Godzilla;
+		public GameObject Robot;
+		public GameObject Poulpe;
 	}
 
 	public Prefabs prefabs;
@@ -43,14 +46,21 @@ public class Game : SceneSingleton<Game>
 		ActiveComboPanes.Remove ( comboPane );
 	}
 
-
-
-
 	void Start()
 	{
-
 	}
 
+	public Player leftPlayer;
+	public Player rightPlayer;
+
+	void Update()
+	{
+		leftPlayer.UpdateInputs ();
+		rightPlayer.UpdateInputs ();
+
+		foreach ( ComboPane cp in ActiveComboPanes )
+			cp.UpdateGraphicalState ();
+    }
 
 	// public Monster MonsterLeft;
 	

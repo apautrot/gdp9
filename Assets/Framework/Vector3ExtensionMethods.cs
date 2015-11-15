@@ -72,7 +72,7 @@ static class Vector3ExtensionMethods
 	public static Vector3 WithXYReplacedBy ( this Vector3 self, float x, float y )
 	{
 		self.x = x;
-		self.x = y;
+		self.y = y;
 		return self;
 	}
 

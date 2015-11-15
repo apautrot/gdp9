@@ -296,7 +296,8 @@ static class MeshUtil
 		mesh.vertices = vertices;
 
 		mesh.RecalculateNormals ();
-	}
+		mesh.RecalculateBounds ();
+    }
 
 	internal static void SetNinePatchUVs ( Mesh mesh, /* float width, float height,*/ float left, float right, float top, float bottom )
 	{

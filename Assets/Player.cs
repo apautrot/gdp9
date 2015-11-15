@@ -9,22 +9,47 @@ public enum InputConfiguration
 	Joystick2
 }
 
-public enum PlayerNumber
+public enum PlayerMonster
 {
-	A,
-	B
+	Godzilla,
+	Poulpe,
+	Robot
+}
+
+public enum PlayerSide
+{
+	Left,
+	Right
 }
 
 public class Player : MonoBehaviour
 {
-	public PlayerNumber playerNumber;
+	public PlayerSide playerSide;
+	public Player opponent;
+	public PlayerMonster playerMonster;
 	public InputConfiguration inputConfiguration;
 
 	internal SkeletonAnimation spineAnimation;
 
 	void Awake()
 	{
-		spineAnimation = GetComponent<SkeletonAnimation> ();
+		spineAnimation = gameObject.FindChildByComponent<SkeletonAnimation> ();
+		// spineAnimation = GetComponent<SkeletonAnimation> ();
+		if ( spineAnimation == null )
+		{
+			switch ( playerMonster )
+			{
+				case PlayerMonster.Godzilla:
+					spineAnimation = gameObject.InstantiateChild ( Game.Instance.prefabs.Godzilla ).GetComponent<SkeletonAnimation> ();
+					break;
+				case PlayerMonster.Poulpe:
+					spineAnimation = gameObject.InstantiateChild ( Game.Instance.prefabs.Poulpe ).GetComponent<SkeletonAnimation> ();
+					break;
+				case PlayerMonster.Robot:
+					spineAnimation = gameObject.InstantiateChild ( Game.Instance.prefabs.Robot ).GetComponent<SkeletonAnimation> ();
+					break;
+			}
+		}
     }
 
 	internal InputDefinition[] CurrentControls
@@ -52,42 +77,66 @@ public class Player : MonoBehaviour
 
 	internal List<InputActionName> inputsEntered = new List<InputActionName>();
 
-	void Update()
-	{
+ 	void Update()
+ 	{
 		if ( Input.GetKeyDown ( KeyCode.F1 ) )
+		{
+			spineAnimation.loop = true;
 			spineAnimation.AnimationName = "IDLE";
+		}
 
 		if ( Input.GetKeyDown ( KeyCode.F2 ) )
+		{
+			spineAnimation.loop = false;
 			spineAnimation.AnimationName = "ATTACK";
+		}
 
 		if ( Input.GetKeyDown ( KeyCode.F3 ) )
+		{
+			spineAnimation.loop = false;
 			spineAnimation.AnimationName = "HIT";
+		}
 
 		if ( Input.GetKeyDown ( KeyCode.F4 ) )
+		{
+			spineAnimation.loop = false;
 			spineAnimation.AnimationName = "ANTE_ATTACK";
-
-		UpdateInputList ();
-
-		// 		foreach ( ComboPane cp in ActiveComboPanes )
-		// 		{
-		// 			List<InputActionName> combinaison = cp.combinaison;
-		// 			// combinaison.
-		// 		}
-
-		string inputsAsString = "";
-		foreach ( var v in inputsEntered )
-			inputsAsString += v.ToString () + " ";
-
-		if ( Input.GetKeyDown ( KeyCode.Backspace ) )
-			inputsEntered.Clear ();
-
-		DebugWindow.Log ( "Input", "List", inputsAsString );
+		}
 	}
 
-	void UpdateInputList()
+	internal void PrepareAttack()
+	{
+		Debug.Log ( "PrepareAttack" );
+
+		spineAnimation.loop = false;
+		spineAnimation.AnimationName = "ANTE_ATTACK";
+		spineAnimation.state.Complete += AnteAttackAnimationComplete;
+    }
+
+	private void AnteAttackAnimationComplete ( Spine.AnimationState state, int trackIndex, int loopCount )
+	{
+		Debug.Log ( "AnteAttackAnimationComplete" );
+
+		spineAnimation.state.Complete -= AnteAttackAnimationComplete;
+		spineAnimation.loop = false;
+		spineAnimation.AnimationName = "ATTACK";
+
+		spineAnimation.state.Complete += AttackAnimationComplete;
+	}
+
+	private void AttackAnimationComplete( Spine.AnimationState state, int trackIndex, int loopCount )
+	{
+		Debug.Log ( "AttackAnimationComplete" );
+		
+		spineAnimation.state.Complete -= AttackAnimationComplete;
+		spineAnimation.loop = true;
+		spineAnimation.AnimationName = "IDLE";
+	}
+
+	internal void UpdateInputs()
 	{
 		List<InputActionName> newInputs = new List<InputActionName>();
-		UpdateInputs ( newInputs );
+		UpdateNewInputs ( newInputs );
 		if ( newInputs.Count > 0 )
 			inputsEntered.AddRange ( newInputs );
 
@@ -97,7 +146,7 @@ public class Player : MonoBehaviour
 		foreach ( ComboPane cp in Game.Instance.ActiveComboPanes )
 			if ( !cp.isCompleted )
 			{
-				ComboPaneResolution resolution = cp.UpdateState ( playerNumber, inputsEntered );
+				ComboPaneResolution resolution = cp.TryResolvingState ( this, inputsEntered );
 				switch ( resolution )
 				{
 					case ComboPaneResolution.Failed:
@@ -117,7 +166,7 @@ public class Player : MonoBehaviour
 			inputsEntered.Clear ();
 	}
 
-	void UpdateInputs ( List<InputActionName> newInputs )
+	void UpdateNewInputs ( List<InputActionName> newInputs )
 	{
 		foreach ( InputDefinition def in CurrentControls )
 		{
