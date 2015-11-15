@@ -1,0 +1,62 @@
+
+LogoAnimationSprites.png
+size: 4096,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bras
+  rotate: false
+  xy: 2007, 95
+  size: 163, 105
+  orig: 163, 105
+  offset: 0, 0
+  index: -1
+Criniere
+  rotate: true
+  xy: 2283, 192
+  size: 318, 482
+  orig: 318, 482
+  offset: 0, 0
+  index: -1
+Langue
+  rotate: false
+  xy: 2, 2
+  size: 189, 60
+  orig: 189, 60
+  offset: 0, 0
+  index: -1
+Logo
+  rotate: false
+  xy: 884, 64
+  size: 834, 446
+  orig: 834, 446
+  offset: 0, 0
+  index: -1
+MachoireBas
+  rotate: false
+  xy: 2767, 413
+  size: 184, 97
+  orig: 184, 97
+  offset: 0, 0
+  index: -1
+MachoireHaute
+  rotate: false
+  xy: 1720, 79
+  size: 285, 121
+  orig: 285, 121
+  offset: 0, 0
+  index: -1
+Queue
+  rotate: false
+  xy: 2, 100
+  size: 880, 410
+  orig: 880, 410
+  offset: 0, 0
+  index: -1
+orps
+  rotate: true
+  xy: 1720, 202
+  size: 308, 561
+  orig: 308, 561
+  offset: 0, 0
+  index: -1
