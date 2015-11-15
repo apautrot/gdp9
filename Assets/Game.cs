@@ -11,11 +11,26 @@ public class Game : SceneSingleton<Game>
 		public GameObject Godzilla;
 		public GameObject Robot;
 		public GameObject Poulpe;
+		public GameObject HitFx;
 	}
 
 	public Prefabs prefabs;
 
-	
+
+
+	[System.Serializable]
+	public class Sounds
+	{
+		public AudioClip HitLaunch;
+		public AudioClip HitReceived;
+		public AudioClip ComboDone;
+		public AudioClip[] ComboButtonPush;
+		public AudioClip ComboFailed;
+	}
+
+	public Sounds sounds = new Sounds();
+
+
 
 	internal BoxCollider2D BoxCollider2D;
 

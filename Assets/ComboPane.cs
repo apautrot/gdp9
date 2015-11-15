@@ -26,8 +26,6 @@ public class ComboPane : MonoBehaviour
 
 	public float Speed;
 
-	GameObject p1;
-	GameObject p2;
 	NinePatch back;
 
 	internal int Size
@@ -41,8 +39,6 @@ public class ComboPane : MonoBehaviour
 	void Awake()
 	{
 		back = gameObject.FindChildByName ( "back" ).GetComponent<NinePatch> ();
-		p1 = gameObject.FindChildByName ( "p1" );
-		p2 = gameObject.FindChildByName ( "p2" );
 
 		BoxCollider2D = GetComponent<BoxCollider2D> ();
 		if ( BoxCollider2D == null )
@@ -171,15 +167,15 @@ public class ComboPane : MonoBehaviour
 		{
 			state = ComboPaneState.Absorbed;
 
-			player.PrepareAttack ();
+			player.PrepareAttack ( Size );
 
 			GoTweenChain chain = new GoTweenChain();
 			chain.append ( transform.scaleTo ( 0.125f, 1.5f ).eases ( GoEaseType.Linear ) );
 			chain.append ( transform.scaleTo ( 0.125f, 1.0f ).eases ( GoEaseType.Linear ) );
 
-			chain.insert ( 0.25f, transform.scaleTo ( 1.25f, 0.0f ).eases ( GoEaseType.QuadInOut ) );
+			chain.insert ( 0.25f, transform.scaleTo ( 1.25f, 0.25f ).eases ( GoEaseType.QuadInOut ) );
 			chain.insert ( 0.25f, transform.positionTo ( 1.25f,
-				player.transform.position + new Vector3 ( 0, 400, 0 )
+				player.ComboCollectPosition
 				).eases ( GoEaseType.QuadInOut ) );
 			chain.setOnCompleteHandler ( c => {
 				gameObject.DestroySelf ();
