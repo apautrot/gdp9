@@ -2,8 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 
+public enum InputConfiguration
+{
+	Keyboard,
+	Joystick1,
+	Joystick2
+}
+
+public enum PlayerNumber
+{
+	A,
+	B
+}
+
 public class Player : MonoBehaviour
 {
+	public PlayerNumber playerNumber;
+	public InputConfiguration inputConfiguration;
+
 	internal SkeletonAnimation spineAnimation;
 
 	void Awake()
@@ -15,7 +31,20 @@ public class Player : MonoBehaviour
 	{
 		get
 		{
-			return InputManager.Instance.Joystick1Definition;
+			switch ( inputConfiguration )
+			{
+				case InputConfiguration.Keyboard:
+					return InputManager.Instance.KeyboardDefinition;
+
+				case InputConfiguration.Joystick1:
+					return InputManager.Instance.Joystick1Definition;
+
+				case InputConfiguration.Joystick2:
+					return InputManager.Instance.Joystick2Definition;
+
+				default:
+					return InputManager.Instance.KeyboardDefinition;
+			}
 		}
 	}
 
@@ -68,7 +97,7 @@ public class Player : MonoBehaviour
 		foreach ( ComboPane cp in Game.Instance.ActiveComboPanes )
 			if ( !cp.isCompleted )
 			{
-				ComboPaneResolution resolution = cp.UpdateState ( inputsEntered );
+				ComboPaneResolution resolution = cp.UpdateState ( playerNumber, inputsEntered );
 				switch ( resolution )
 				{
 					case ComboPaneResolution.Failed:
@@ -92,7 +121,7 @@ public class Player : MonoBehaviour
 	{
 		foreach ( InputDefinition def in CurrentControls )
 		{
-			def.DebugInWindow ();
+			def.DebugInWindow ( inputConfiguration.ToString() );
 		}
 
 		foreach ( InputDefinition def in CurrentControls )

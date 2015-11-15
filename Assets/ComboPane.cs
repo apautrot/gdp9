@@ -20,6 +20,10 @@ public class ComboPane : MonoBehaviour
 
 	private ComboPane paneAtRight;
 
+	GameObject p1;
+	GameObject p2;
+	NinePatch back;
+
 	void Awake()
 	{
 		BoxCollider2D = GetComponent<BoxCollider2D> ();
@@ -91,7 +95,7 @@ public class ComboPane : MonoBehaviour
 
 	void Update()
 	{
-		DebugWindow.Log ( name, "lossyScale", transform.lossyScale.ToStringEx() );
+		// DebugWindow.Log ( name, "lossyScale", transform.lossyScale.ToStringEx() );
 
 		transform.localPosition -= new Vector3 ( ComboList.Instance.ScrollingSpeed * Time.deltaTime, 0, 0 );
 
@@ -126,7 +130,7 @@ public class ComboPane : MonoBehaviour
 		}
     }
 
-	internal ComboPaneResolution UpdateState ( List<InputActionName> inputs )
+	internal ComboPaneResolution UpdateState ( PlayerNumber playerNumber, List<InputActionName> inputs )
 	{
 		if ( isCompleted )
 			return ComboPaneResolution.Completed;
