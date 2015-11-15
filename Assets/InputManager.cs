@@ -26,10 +26,10 @@ public class InputDefinition
 
 	public KeyCode keyboardKeyCode;
 
-	internal void DebugInWindow()
+	internal void DebugInWindow(string controllerName)
 	{
 		bool isActivated = IsActivated;
-		DebugWindow.Log ( "Input", name.ToString (), isActivated );
+		DebugWindow.Log ( "Input " + controllerName, name.ToString (), isActivated );
 	}
 
 	public bool IsActivated
@@ -84,10 +84,7 @@ public class InputManager : SceneSingleton<InputManager>
 
 	public InputButtonDefinition[] ButtonsPrefabs;
 
-	// [FormerlySerializedAs("JoystickDefinition")]
 	public InputDefinition[] KeyboardDefinition;
-
-	// [FormerlySerializedAs ( "JoystickDefinitionB" )]
 	public InputDefinition[] Joystick1Definition;
-
+	public InputDefinition[] Joystick2Definition;
 }

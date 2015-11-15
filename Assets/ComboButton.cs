@@ -27,7 +27,7 @@ public class ComboButton : MonoBehaviour
 				// spriteRenderer.material.SetAlpha ( isActivated ? 0.5f : 1.0f );
 				if ( isActivated )
 				{
-					transform.localScale = new Vector3 ( 1.2f, 1.2f, 1.2f );
+					transform.localScale = new Vector3 ( 1.1f, 1.1f, 1.1f );
 					transform.localPosition = transform.localPosition.WithYReplacedBy ( 20 );
 				}
 				else
