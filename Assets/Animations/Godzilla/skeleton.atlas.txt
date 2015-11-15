@@ -6,99 +6,106 @@ filter: Linear,Linear
 repeat: none
 godzilla_avbras1
   rotate: false
-  xy: 757, 419
+  xy: 504, 29
   size: 42, 91
   orig: 42, 91
   offset: 0, 0
   index: -1
 godzilla_avbras2
-  rotate: false
-  xy: 504, 30
+  rotate: true
+  xy: 867, 437
   size: 50, 79
   orig: 50, 79
   offset: 0, 0
   index: -1
 godzilla_bras1
   rotate: false
-  xy: 504, 208
+  xy: 504, 122
   size: 75, 93
   orig: 75, 93
   offset: 0, 0
   index: -1
 godzilla_bras2
-  rotate: false
-  xy: 695, 411
+  rotate: true
+  xy: 766, 427
   size: 60, 99
   orig: 60, 99
   offset: 0, 0
   index: -1
 godzilla_corps
   rotate: false
-  xy: 2, 25
+  xy: 2, 2
   size: 500, 485
   orig: 500, 485
   offset: 0, 0
   index: -1
 godzilla_jambe1
   rotate: false
-  xy: 504, 395
+  xy: 504, 309
   size: 112, 115
   orig: 112, 115
   offset: 0, 0
   index: -1
 godzilla_jambe2
   rotate: false
-  xy: 504, 303
+  xy: 504, 217
   size: 100, 90
   orig: 100, 90
   offset: 0, 0
   index: -1
 godzilla_machoire
-  rotate: false
-  xy: 801, 476
+  rotate: true
+  xy: 548, 37
   size: 83, 34
   orig: 83, 34
   offset: 0, 0
   index: -1
 godzilla_main1
   rotate: true
-  xy: 886, 468
+  xy: 948, 445
   size: 42, 62
   orig: 42, 62
   offset: 0, 0
   index: -1
 godzilla_main2
-  rotate: true
-  xy: 950, 471
+  rotate: false
+  xy: 640, 276
   size: 39, 43
   orig: 39, 43
   offset: 0, 0
   index: -1
 godzilla_pied1
-  rotate: false
-  xy: 801, 442
+  rotate: true
+  xy: 606, 229
   size: 78, 32
   orig: 78, 32
   offset: 0, 0
   index: -1
 godzilla_pied2
-  rotate: false
-  xy: 504, 2
+  rotate: true
+  xy: 581, 135
   size: 80, 26
   orig: 80, 26
   offset: 0, 0
   index: -1
 godzilla_tibia1
   rotate: false
-  xy: 618, 407
+  xy: 618, 321
   size: 75, 103
   orig: 75, 103
   offset: 0, 0
   index: -1
 godzilla_tibia2
   rotate: false
-  xy: 504, 111
+  xy: 695, 329
   size: 64, 95
   orig: 64, 95
+  offset: 0, 0
+  index: -1
+ombre
+  rotate: false
+  xy: 504, 426
+  size: 260, 61
+  orig: 260, 61
   offset: 0, 0
   index: -1
