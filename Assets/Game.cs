@@ -31,7 +31,7 @@ public class Game : SceneSingleton<Game>
 		);
     }
 
-	List<ComboPane> ActiveComboPanes = new List<ComboPane>();
+	internal List<ComboPane> ActiveComboPanes = new List<ComboPane>();
 
 	internal void RegisterComboPane( ComboPane comboPane )
 	{
@@ -51,62 +51,7 @@ public class Game : SceneSingleton<Game>
 
 	}
 
+
+	// public Monster MonsterLeft;
 	
-
-	internal List<InputActionName> inputsEntered = new List<InputActionName>();
-
-	void Update()
-	{
-		UpdateInputList ();
-
-		// 		foreach ( ComboPane cp in ActiveComboPanes )
-		// 		{
-		// 			List<InputActionName> combinaison = cp.combinaison;
-		// 			// combinaison.
-		// 		}
-
-		string inputsAsString = "";
-		foreach ( var v in inputsEntered )
-			inputsAsString += v.ToString () + " ";
-
-		if ( Input.GetKeyDown ( KeyCode.Backspace ) )
-			inputsEntered.Clear ();
-
-        DebugWindow.Log ( "Input", "List", inputsAsString );
-    }
-
-	void UpdateInputList()
-	{
-		InputManager.Instance.Update ();
-		if ( InputManager.Instance.NewInputsQueue.Count > 0 )
-		{
-			inputsEntered.AddRange ( InputManager.Instance.NewInputsQueue );
-			InputManager.Instance.NewInputsQueue.Clear ();
-        }
-
-		bool oneCompleted = false;
-		bool onePartiallyCompleted = false;
-
-		foreach ( ComboPane cp in ActiveComboPanes )
-			if ( !cp.isCompleted )
-			{
-				ComboPaneResolution resolution = cp.UpdateState ( inputsEntered );
-				switch ( resolution )
-				{
-					case ComboPaneResolution.Failed:
-						break;
-					case ComboPaneResolution.Completed:
-						oneCompleted = true;
-						break;
-					case ComboPaneResolution.NotCompleted:
-						onePartiallyCompleted = true;
-						break;
-				}
-			}
-
-		if ( oneCompleted )
-			inputsEntered.Clear ();
-		else if ( ! onePartiallyCompleted )
-			inputsEntered.Clear ();
-	}
 }
